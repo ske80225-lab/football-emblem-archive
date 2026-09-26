@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>サッカーエンブレム図鑑</title>
+  <meta name="description" content="ヨーロッパ22か国の主要サッカークラブのエンブレムを、国・色・形・リーグで絞り込んで眺められる図鑑。">
+  <!-- favicon・ホーム画面アイコン -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="images/icons/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="apple-mobile-web-app-title" content="Emblem Archive">
+  <meta name="theme-color" content="#2c3437">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1 class="site-header__title">Football Emblem Archive</h1>
+    <button type="button" class="search-toggle" id="searchToggle"
+            aria-label="検索メニューを開く" aria-expanded="false" aria-controls="searchPanel">
+      <img src="images/ui/search.svg" alt="" width="24.5" height="24.5">
+    </button>
+  </header>
+
+  <main>
+    <!-- 一覧 -->
+    <ul class="club-grid" id="clubGrid"></ul>
+    <p class="empty" id="emptyState" hidden>条件に一致するクラブがありません。</p>
+    <p class="visually-hidden" id="resultCount" aria-live="polite"></p>
+  </main>
+
+  <footer class="site-footer">
+    <p>※ 個人利用のための図鑑です。エンブレム画像は Wikipedia / Wikimedia Commons より表示しています。</p>
+  </footer>
+
+  <!-- 検索メニュー -->
+  <div class="search-overlay" id="searchOverlay" hidden></div>
+  <aside class="search-panel" id="searchPanel" aria-label="検索メニュー" aria-hidden="true" inert>
+    <button type="button" class="search-panel__close" id="searchClose" aria-label="検索メニューを閉じる">
+      <img src="images/ui/close.svg" alt="" width="22" height="22">
+    </button>
+
+    <div class="search-panel__body">
+      <div class="search-row">
+        <label class="search-row__label" for="searchInput">Club Name</label>
+        <div class="search-row__control">
+          <input type="search" class="search-input" id="searchInput" autocomplete="off">
+        </div>
+      </div>
+
+      <div class="search-row">
+        <p class="search-row__label">Country</p>
+        <div class="search-row__control pill-list" id="filterCountry"></div>
+      </div>
+
+      <div class="search-row search-row--center">
+        <label class="search-row__label" for="colorGauge">Color</label>
+        <div class="search-row__control">
+          <input type="range" class="color-gauge" id="colorGauge" min="0" max="100" step="1" value="15"
+                 aria-label="この色に近いエンブレム順に並び替え">
+        </div>
+      </div>
+
+      <div class="search-row search-row--center">
+        <p class="search-row__label">Shape</p>
+        <div class="search-row__control shape-list" id="filterShape"></div>
+      </div>
+
+      <div class="search-row search-row--center">
+        <p class="search-row__label">League</p>
+        <div class="search-row__control">
+          <div class="segmented" id="filterDivision" role="group" aria-label="リーグカテゴリー"></div>
+        </div>
+      </div>
+
+      <div class="search-panel__footer">
+        <button type="button" class="pill clear-btn" id="clearFilters">すべてクリア</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- クラブ詳細 -->
+  <dialog class="modal" id="clubModal" aria-labelledby="modalTitle">
+    <div class="modal__inner">
+      <button type="button" class="modal__close" data-close aria-label="閉じる">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </dialog>
+
+  <script src="js/master.js"></script>
+  <script src="js/data/clubs.js"></script>
+  <script src="js/emblem.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
