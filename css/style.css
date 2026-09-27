@@ -54,17 +54,21 @@ img { display: block; max-width: 100%; }
 
 /* ---------- ヘッダー ---------- */
 
+/* タイトル：Inter SemiBold 24px・中央。大文字の上端がページ上端から48pxになる位置 */
 .site-header {
   height: 114px;
-  padding: 19px 24px 0;
+  padding: 42px 64px 0;
+  text-align: center;
 }
 .site-header__title {
   font-family: var(--font-en);
-  font-size: 20px;
-  font-weight: 800;
-  line-height: 1.2;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white);
+  white-space: nowrap;
 }
 
 /* 検索ボタン（スクロールしても右上に固定） */
@@ -623,7 +627,7 @@ img { display: block; max-width: 100%; }
   /* スマホはメニューが全面を覆うので背面のスクロールを止める（PCは一覧をスクロール可能） */
   body.is-search-open { overflow: hidden; }
 
-  .site-header { height: 84px; padding: 17px 16px 0; }
+  .site-header { height: 84px; padding: 29px 58px 0; }
   .site-header__title { font-size: 16px; }
 
   .club-grid { grid-template-columns: repeat(2, 1fr); }
