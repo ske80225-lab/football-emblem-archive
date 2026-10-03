@@ -27,6 +27,11 @@ window.COUNTRIES = [
   { key: "sweden",      name: "スウェーデン",   flag: "se",     emoji: "🇸🇪" },
   { key: "slovakia",    name: "スロバキア",     flag: "sk",     emoji: "🇸🇰" },
   { key: "serbia",      name: "セルビア",       flag: "rs",     emoji: "🇷🇸" },
+  { key: "finland",     name: "フィンランド",   flag: "fi",     emoji: "🇫🇮" },
+  { key: "bulgaria",    name: "ブルガリア",     flag: "bg",     emoji: "🇧🇬" },
+  { key: "cyprus",      name: "キプロス",       flag: "cy",     emoji: "🇨🇾" },
+  { key: "bosnia",      name: "ボスニア・ヘルツェゴビナ", flag: "ba", emoji: "🇧🇦" },
+  { key: "romania",     name: "ルーマニア",     flag: "ro",     emoji: "🇷🇴" },
 ];
 
 // エンブレムカラー：hex はスウォッチ表示とダミーエンブレム生成に使用
@@ -96,6 +101,11 @@ window.LEAGUES = {
   sweden:      ["アルスヴェンスカン", "スーペルエッタン"],
   slovakia:    ["ニケ・リガ", "2.リガ"],
   serbia:      ["セルビア・スーペルリーガ", "セルビア・プルヴァリーガ"],
+  finland:     ["ヴェイッカウスリーガ", "ユッコスリーガ"],
+  bulgaria:    ["ブルガリア・ファーストリーグ", "ブルガリア・セカンドリーグ"],
+  cyprus:      ["キプロス・ファーストディビジョン", "キプロス・セカンドディビジョン"],
+  bosnia:      ["ボスニア・ヘルツェゴビナ・プレミアリーグ", "—"],
+  romania:     ["リーガI", "リーガII"],
 };
 
 // key → マスター項目 を引くためのヘルパー
