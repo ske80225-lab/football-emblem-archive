@@ -15,8 +15,7 @@ from html.parser import HTMLParser
 UA = {"User-Agent": "EmblemZukanPersonal/0.1 (personal hobby project; python-urllib)"}
 # 追加したいリーグをここに書く（country キーは js/master.js の COUNTRIES と一致させる）
 LEAGUES = [
-    # ("finland", 1, "2026 Veikkausliiga"),
-    # ("finland", 2, "2026 Ykkösliiga"),
+    ("england", 3, "2026–27 EFL League One"),
 ]
 
 def api(params, host="en"):

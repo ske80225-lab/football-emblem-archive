@@ -75,11 +75,12 @@ window.shapeIcon = (shape, cls = "shape-icon") =>
 window.DIVISIONS = [
   { key: 1, name: "Div. 1" },
   { key: 2, name: "Div. 2" },
+  { key: 3, name: "Div. 3" },
 ];
 
-// 所属リーグ名（country → [1部, 2部]）
+// 所属リーグ名（country → [1部, 2部, 3部…]）。3部があるのはイングランドのみ
 window.LEAGUES = {
-  england:     ["プレミアリーグ", "EFLチャンピオンシップ"],
+  england:     ["プレミアリーグ", "EFLチャンピオンシップ", "EFLリーグ1"],
   spain:       ["ラ・リーガ", "セグンダ・ディビシオン"],
   italy:       ["セリエA", "セリエB"],
   germany:     ["ブンデスリーガ", "2.ブンデスリーガ"],
