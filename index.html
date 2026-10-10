@@ -79,10 +79,38 @@
       </div>
 
       <div class="search-panel__footer">
-        <button type="button" class="pill clear-btn" id="clearFilters">すべてクリア</button>
+        <button type="button" class="action-btn action-btn--wide" id="searchApply">
+          <img class="action-btn__icon" src="images/ui/btn-search.svg" alt="" width="14" height="14">Search
+        </button>
+        <button type="button" class="action-btn action-btn--wide" id="openPrint">
+          <img class="action-btn__icon" src="images/ui/btn-print.svg" alt="" width="15" height="14.19">Print
+        </button>
+        <button type="button" class="action-btn" id="clearFilters">Clear</button>
       </div>
     </div>
   </aside>
+
+  <!-- 印刷リスト -->
+  <dialog class="print-modal" id="printModal" aria-labelledby="printTitle">
+    <div class="print-modal__head">
+      <div>
+        <h2 class="print-modal__title" id="printTitle">Print</h2>
+        <p class="print-modal__count" id="printCount"></p>
+      </div>
+      <div class="print-modal__actions">
+        <button type="button" class="print-modal__reset" id="printReset">元に戻す</button>
+        <button type="button" class="action-btn action-btn--wide action-btn--dark" id="printRun">
+          <img class="action-btn__icon" src="images/ui/btn-print.svg" alt="" width="15" height="14.19">Print
+        </button>
+        <button type="button" class="print-modal__close" id="printClose" aria-label="閉じる">×</button>
+      </div>
+    </div>
+    <div class="print-list__head" aria-hidden="true"><span>順位</span><span>チーム名</span></div>
+    <ol class="print-list" id="printList"></ol>
+  </dialog>
+
+  <!-- 印刷用の紙面（印刷時だけ表示） -->
+  <div class="print-sheet" id="printSheet"></div>
 
   <!-- クラブ詳細 -->
   <dialog class="modal" id="clubModal" aria-labelledby="modalTitle">
@@ -96,5 +124,6 @@
   <script src="js/data/clubs.js"></script>
   <script src="js/emblem.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/print.js"></script>
 </body>
 </html>

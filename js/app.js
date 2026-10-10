@@ -25,6 +25,9 @@
     division: $("#filterDivision"),
     gauge: $("#colorGauge"),
     clear: $("#clearFilters"),
+    searchApply: $("#searchApply"),
+    openPrint: $("#openPrint"),
+    printModal: $("#printModal"),
     search: $("#searchInput"),
     toggle: $("#searchToggle"),
     panel: $("#searchPanel"),
@@ -134,8 +137,11 @@
       </li>`;
   }
 
+  // 現在の絞り込み・並び順の一覧（印刷リストでも使う）
+  const currentList = () => sortByColor(CLUBS.filter(matches));
+
   function renderList() {
-    const list = sortByColor(CLUBS.filter(matches));
+    const list = currentList();
     el.grid.innerHTML = list.map(cardHTML).join("");
     el.count.textContent = `${list.length} / ${CLUBS.length} クラブ`;
     el.empty.hidden = list.length > 0;
@@ -299,12 +305,24 @@
       renderList();
     });
 
+    // Search：絞り込みは即時反映済みなので、メニューを閉じて一覧の先頭へ
+    el.searchApply.addEventListener("click", () => {
+      closePanel();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Print：絞り込み結果を印刷リストで開く
+    el.openPrint.addEventListener("click", () => {
+      closePanel();
+      openPrintList(currentList());
+    });
+
     // 検索メニュー：ボタン・閉じる・外側クリック・Esc
     el.toggle.addEventListener("click", openPanel);
     el.panelClose.addEventListener("click", closePanel);
     el.overlay.addEventListener("click", closePanel);
     document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && !el.modal.open) closePanel();
+      if (e.key === "Escape" && !el.modal.open && !el.printModal.open) closePanel();
     });
 
     // 閉じるボタン・背景クリック・Esc
