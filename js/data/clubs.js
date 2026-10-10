@@ -2382,8 +2382,8 @@ window.CLUBS = [
     id: "club-brugge-kv", name: "クラブ・ブルッヘ", country: "belgium", division: 1,
     city: "ブルッヘ", founded: 1891, nickname: "青と黒",
     stadium: "ヤン・ブレイデルスタディオン", capacity: 29062,
-    colors: ["black", "white", "blue", "other"], shapes: ["circle"], motif: null,
-    emblem: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Club_brugge.png/500px-Club_brugge.png",
+    colors: ["black", "blue", "white", "yellow"], shapes: ["circle"], motif: null,
+    emblem: "images/emblems/club-brugge-kv.webp",
     titles: [],
   },
   {
