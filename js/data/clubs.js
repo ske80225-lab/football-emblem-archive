@@ -3295,7 +3295,7 @@ window.CLUBS = [
     city: "リベレツ", founded: 1958, nickname: "モドロビーリー（青と白）",
     stadium: "スタディオン・ウ・ニシ", capacity: 9900,
     colors: ["black", "white", "blue"], shapes: ["circle"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/f/ff/Slovan_Liberec_logo_since_2024.png",
+    emblem: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Slovan_Liberec_logo.png",
     titles: [],
   },
   {
