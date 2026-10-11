@@ -2959,7 +2959,7 @@ window.CLUBS = [
     city: "ハルトベルク", founded: 1946, nickname: null,
     stadium: "プロフェルティル・アレーナ・ハルトベルク", capacity: 5024,
     colors: ["white", "blue"], shapes: ["shield"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/8/81/TSV_Hartberg.png",
+    emblem: "images/emblems/tsv-hartberg.png",
     titles: [],
   },
   {
