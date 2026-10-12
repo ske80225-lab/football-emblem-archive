@@ -15,7 +15,14 @@ from html.parser import HTMLParser
 UA = {"User-Agent": "EmblemZukanPersonal/0.1 (personal hobby project; python-urllib)"}
 # 追加したいリーグをここに書く（country キーは js/master.js の COUNTRIES と一致させる）
 LEAGUES = [
-    ("england", 3, "2026–27 EFL League One"),
+    ("japan", 1, "2026–27 J1 League"),
+    ("japan", 2, "2026–27 J2 League"),
+    ("japan", 3, "2026–27 J3 League"),
+    ("usa", 1, "2026 Major League Soccer season"),
+    ("mexico", 1, "2026–27 Liga MX season"),
+    ("brazil", 1, "2026 Campeonato Brasileiro Série A"),
+    ("argentina", 1, "2026 Argentine Primera División"),
+    ("saudi", 1, "2026–27 Saudi Pro League"),
 ]
 
 def api(params, host="en"):
@@ -130,7 +137,8 @@ def fetch():
         b = x["box"]
         img = field(b, ["image", "logo", "crest", "current_crest"])
         img = re.sub(r"\{\{!\}\}.*$", "", img)
-        img = re.sub(r"^\[\[|\]\]$", "", img); img = re.sub(r"^(File|Image):", "", img).split("|")[0].strip()
+        img = re.sub(r"^\[\[|\]\]$", "", img); img = re.sub(r"^(File|Image):", "", img, flags=re.I).split("|")[0].strip()
+        img = urllib.parse.unquote(img)  # 「Escudo_del_Club_Atl%C3%A9tico...」のようなURLエンコード表記に対応
         if "<!--" in img or not re.search(r"\.(svg|png|jpe?g|gif)$", img, re.I): img = ""
         jst = field(j, ["スタジアム", "ホームスタジアム"])
         links = re.findall(r"\[\[(?!File:|ファイル:|画像:)(?:[^|\]]*\|)?([^\]]*)\]\]", jst)

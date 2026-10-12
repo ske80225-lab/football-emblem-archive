@@ -32,6 +32,13 @@ window.COUNTRIES = [
   { key: "cyprus",      name: "キプロス",       flag: "cy",     emoji: "🇨🇾" },
   { key: "bosnia",      name: "ボスニア・ヘルツェゴビナ", flag: "ba", emoji: "🇧🇦" },
   { key: "romania",     name: "ルーマニア",     flag: "ro",     emoji: "🇷🇴" },
+  { key: "japan",       name: "日本",           flag: "jp",     emoji: "🇯🇵" },
+  { key: "usa",         name: "アメリカ",       flag: "us",     emoji: "🇺🇸" },
+  { key: "canada",      name: "カナダ",         flag: "ca",     emoji: "🇨🇦" },
+  { key: "mexico",      name: "メキシコ",       flag: "mx",     emoji: "🇲🇽" },
+  { key: "brazil",      name: "ブラジル",       flag: "br",     emoji: "🇧🇷" },
+  { key: "argentina",   name: "アルゼンチン",   flag: "ar",     emoji: "🇦🇷" },
+  { key: "saudi",       name: "サウジアラビア", flag: "sa",     emoji: "🇸🇦" },
 ];
 
 // エンブレムカラー：hex はスウォッチ表示とダミーエンブレム生成に使用
@@ -107,6 +114,13 @@ window.LEAGUES = {
   cyprus:      ["キプロス・ファーストディビジョン", "キプロス・セカンドディビジョン"],
   bosnia:      ["ボスニア・ヘルツェゴビナ・プレミアリーグ", "—"],
   romania:     ["リーガI", "リーガII"],
+  japan:       ["J1リーグ", "J2リーグ", "J3リーグ"],
+  usa:         ["メジャーリーグサッカー"],
+  canada:      ["メジャーリーグサッカー"],   // MLS に参加するカナダのクラブ
+  mexico:      ["リーガMX"],
+  brazil:      ["カンピオナート・ブラジレイロ・セリエA"],
+  argentina:   ["リーガ・プロフェシオナル"],
+  saudi:       ["サウジ・プロフェッショナルリーグ"],
 };
 
 // key → マスター項目 を引くためのヘルパー
