@@ -700,6 +700,12 @@ img { display: block; max-width: 100%; }
   line-height: 1;
 }
 .print-modal__close:hover { background: var(--line); }
+.print-modal__note {
+  padding: 12px 24px;
+  border-bottom: 1px solid var(--line);
+  font-size: 12px;
+  color: var(--text-sub);
+}
 
 .print-list__head,
 .print-row {
@@ -839,6 +845,7 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 700px) {
   .print-modal__head { flex-wrap: wrap; padding: 16px; }
+  .print-modal__note { padding: 12px 16px; }
   .print-list__head, .print-row {
     grid-template-columns: 16px 52px 40px 1fr 52px;
     gap: 8px;
@@ -866,7 +873,7 @@ img { display: block; max-width: 100%; }
     print-color-adjust: exact;
   }
   .print-sheet { display: block; }
-  .print-sheet .sheet { width: 188mm; margin: 0 auto; break-after: page; }
+  .print-sheet .sheet { width: 100%; max-width: 188mm; margin: 0 auto; break-after: page; }
   .print-sheet .sheet:last-child { break-after: auto; }
   .print-sheet h1 { font-size: 13pt; font-weight: 600; margin: 0 0 1mm; letter-spacing: .03em; }
   .print-sheet .sub { font-size: 8pt; color: #6b7280; margin: 0 0 3.5mm; }

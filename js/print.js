@@ -4,6 +4,9 @@
    ・順位（1からの連番）はドラッグ or 数字入力で並べ替え、行ごとに削除可
    ・チーム名は印刷用に書き換え可（図鑑のデータは変えない）
    ・モーダルの Print → A4 縦・2列の表で印刷（1ページ最大40件）
+   ・紙面は一覧の変更時に先に組み立てておく。スマホのブラウザは
+     タップから時間が空いた window.print() を無視するため、
+     Print のタップでは待たずに直接 window.print() を呼ぶ
    ========================================================== */
 
 (function () {
@@ -17,11 +20,13 @@
     run: $("#printRun"),
     reset: $("#printReset"),
     close: $("#printClose"),
+    note: $("#printNote"),
     sheet: $("#printSheet"),
   };
 
   let source = []; // 開いたときの絞り込み結果（元に戻す用）
   let items = []; // { club, name }
+  let prepareId = 0; // 最新の紙面準備だけを有効にする
 
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 
@@ -52,8 +57,7 @@
 
   function render() {
     el.list.innerHTML = items.map(rowHTML).join("");
-    el.count.textContent = `全${items.length}件`;
-    el.run.disabled = items.length === 0;
+    prepareSheet();
   }
 
   function move(from, to) {
@@ -158,28 +162,25 @@
     return Promise.race([all, new Promise((r) => setTimeout(r, 5000))]);
   }
 
-  async function runPrint() {
-    if (!items.length) return;
+  // 紙面を組み立て、画像が揃うまで Print を押せないようにする
+  async function prepareSheet() {
+    const id = ++prepareId;
+    const total = `全${items.length}件`;
     buildSheet();
     el.run.disabled = true;
+    el.count.textContent = `${total}・画像を準備中…`;
     await waitImages(el.sheet);
-    el.run.disabled = false;
-    document.body.classList.add("is-printing");
-    el.modal.close();
-    window.print();
+    if (id !== prepareId) return;
+    el.run.disabled = items.length === 0;
+    el.count.textContent = total;
   }
-
-  window.addEventListener("afterprint", () => {
-    if (!document.body.classList.contains("is-printing")) return;
-    document.body.classList.remove("is-printing");
-    el.modal.showModal();
-  });
 
   /* ---------- 開閉 ---------- */
 
   window.openPrintList = function (clubs) {
     source = clubs;
     items = clubs.map((club) => ({ club, name: club.name }));
+    el.note.hidden = !navigator.standalone; // iOS のホーム画面アプリ
     render();
     el.modal.showModal();
     el.modal.scrollTop = 0;
@@ -212,14 +213,16 @@
 
     el.list.addEventListener("input", (e) => {
       if (!e.target.classList.contains("print-row__name")) return;
-      items[Number(e.target.closest(".print-row").dataset.index)].name = e.target.value;
+      const index = Number(e.target.closest(".print-row").dataset.index);
+      items[index].name = e.target.value;
+      el.sheet.querySelectorAll(".nm")[index].textContent = e.target.value;
     });
 
     el.list.addEventListener("keydown", (e) => {
       if (e.key === "Enter" && e.target.classList.contains("print-row__rank")) e.target.blur();
     });
 
-    el.run.addEventListener("click", runPrint);
+    el.run.addEventListener("click", () => window.print());
     el.reset.addEventListener("click", () => window.openPrintList(source));
     el.close.addEventListener("click", () => el.modal.close());
     el.modal.addEventListener("click", (e) => {
