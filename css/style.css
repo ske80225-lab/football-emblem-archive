@@ -812,6 +812,13 @@ img { display: block; max-width: 100%; }
 @media (max-width: 1024px) {
   .club-grid { grid-template-columns: repeat(3, 1fr); }
 }
+/* PC：メニューは一覧に重ねず、開いた幅の分だけ一覧を縮める（列数は幅に合わせて変わる）。
+   これより狭いと一覧が細くなりすぎるので、従来どおり一覧の上に重ねる */
+@media (min-width: 1200px) {
+  .search-overlay { display: none; }
+  body.is-search-open { padding-right: var(--panel-width); }
+  body.is-search-open .club-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+}
 @media (max-width: 800px) {
   .modal__inner { padding: 56px 24px 32px; }
   .detail { grid-template-columns: 1fr; gap: 28px; }

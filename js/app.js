@@ -150,13 +150,21 @@
 
   /* ---------- 検索メニューの開閉 ---------- */
 
+  // 一覧の幅が変わっても、画面上端にあるカードが動かないようスクロール位置を補正する
+  function keepScrollPosition(change) {
+    const first = [...el.grid.children].find((li) => li.getBoundingClientRect().bottom > 0);
+    const top = first?.getBoundingClientRect().top;
+    change();
+    if (first) window.scrollBy(0, first.getBoundingClientRect().top - top);
+  }
+
   function openPanel() {
     el.panel.classList.add("is-open");
     el.panel.removeAttribute("inert");
     el.panel.setAttribute("aria-hidden", "false");
     el.overlay.hidden = false;
     el.toggle.setAttribute("aria-expanded", "true");
-    document.body.classList.add("is-search-open");
+    keepScrollPosition(() => document.body.classList.add("is-search-open"));
     setTimeout(() => el.search.focus({ preventScroll: true }), 50);
   }
 
@@ -167,7 +175,7 @@
     el.panel.setAttribute("aria-hidden", "true");
     el.overlay.hidden = true;
     el.toggle.setAttribute("aria-expanded", "false");
-    document.body.classList.remove("is-search-open");
+    keepScrollPosition(() => document.body.classList.remove("is-search-open"));
     el.toggle.focus({ preventScroll: true });
   }
 
