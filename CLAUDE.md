@@ -77,7 +77,7 @@
   - オーストリア2部：今季記事が無く、2025–26 の顔ぶれから昇降格を反映して推定
   - キプロス2部：Wikipedia に今季記事が無く、Flashscore の 2026/2027 順位表で所属確認
   - セルビア1部：今季14クラブ（FotMob でも確認済み）
-- エンブレム画像が無く仮の図案のクラブ：バトマン・ペトロルスポル、マルディン1969、ムーラスポル（トルコ2部）、オパヴァ（チェコ2部）、ビトチャ（スロバキア2部）、ヘバル・パザルジク（ブルガリア2部）、ポレミディオン（キプロス2部・Wikipedia記事なし）、レイラック滋賀FC（J3）、FC琉球OKINAWA（J3）
+- Wikipedia に画像が無い／URL が 404 になったクラブ（41件）は FotMob の 192px ロゴを `images/emblems/<id>.png` に保存して補完（`https://images.fotmob.com/image_resources/logo/teamlogo/<teamId>.png`。チームIDは FotMob の検索で、リーグ名まで照合して特定）
 
 ## クラブ・国を追加する手順
 
@@ -92,6 +92,6 @@
 
 ## 作業メモ
 
-- Wikipedia の画像は `upload.wikimedia.org` / `thumb.wikimedia.org` に直リンク（ダウンロードはしていない）。thumb の幅は標準サイズ（120 / 250 / 330 / 500 など）しか使えない
+- Wikipedia の画像は `upload.wikimedia.org` / `thumb.wikimedia.org` に直リンク（ダウンロードはしていない）。リンク切れになるとダミー表示になるので、ときどき全URLの生死を確認する（2026-11-01 時点で32件が404）。thumb の幅は標準サイズ（120 / 250 / 330 / 500 など）しか使えない
 - プレビューは Desktop 配下を直接配信できない（権限エラー）ため、スクラッチパッドにコピーして `python3 -m http.server` で配信していた（設定は `キャラクター図鑑_20260811/.claude/launch.json` の `emblem` / `emblem-work`）
 - 色の自動推定は HSV で分類。金・銀は `orange` / `other` になりがち

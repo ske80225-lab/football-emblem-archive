@@ -2155,7 +2155,7 @@ window.CLUBS = [
     city: "バルセロス", founded: 1924, nickname: "ガロス（雄鶏）",
     stadium: "エスタディオ・シダーデ・デ・バルセロス", capacity: 12046,
     colors: ["blue", "red", "white", "other"], shapes: ["shield", "animal"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/8/8f/Gil_Vicente_F.C.png",
+    emblem: "images/emblems/gil-vicente.png",
     titles: [],
   },
   {
@@ -2221,7 +2221,7 @@ window.CLUBS = [
     city: "トンデラ", founded: 1933, nickname: "アウリヴェルデス（金と緑）",
     stadium: "エスタディオ・ジョアン・カルドーゾ", capacity: 5000,
     colors: ["green", "white", "yellow", "black"], shapes: ["shield", "letter"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/0/00/C.D._Tondela.png",
+    emblem: "images/emblems/c-d-tondela.png",
     titles: [],
   },
   {
@@ -2471,7 +2471,7 @@ window.CLUBS = [
     city: "ウェステルロー", founded: 1933, nickname: "ケンプハーネン",
     stadium: "ヘット・カイピー", capacity: 8035,
     colors: ["blue", "yellow"], shapes: ["shield"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/1/17/K.V.C._Westerlo_logo.png",
+    emblem: "images/emblems/kvc-westerlo.png",
     titles: [],
   },
   {
@@ -2497,7 +2497,7 @@ window.CLUBS = [
     city: "デンデルレーウ", founded: 1935, nickname: null,
     stadium: "フローラン・ベークマンスタディオン", capacity: 6429,
     colors: ["black", "white", "other", "red"], shapes: ["shield"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/9/98/FCVDenderEH.png",
+    emblem: "images/emblems/fcv-dender-eh.png",
     titles: [],
   },
   {
@@ -2529,7 +2529,7 @@ window.CLUBS = [
     city: "ロケレン", founded: 1945, nickname: "ワースラント",
     stadium: "ダクナム・スタディオン", capacity: 12136,
     colors: ["black", "yellow"], shapes: ["circle"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/7/71/Sporting_Lokeren-logo.png",
+    emblem: "images/emblems/ksc-lokeren.png",
     titles: [],
   },
   {
@@ -2569,7 +2569,7 @@ window.CLUBS = [
     city: "スラン", founded: 1922, nickname: "白いライオン",
     stadium: "スタッド・ドゥ・パワレイ", capacity: 8207,
     colors: ["white", "red", "yellow", "black"], shapes: ["shield"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/e/e6/RFC_Seraing_logo.png",
+    emblem: "images/emblems/rfc-seraing.png",
     titles: [],
   },
 
@@ -2741,7 +2741,7 @@ window.CLUBS = [
     city: "バトマン", founded: 1960, nickname: null,
     stadium: "バトマン・スタジアム", capacity: 15000,
     colors: ["other"], shapes: ["other"], motif: null,
-    emblem: null,
+    emblem: "images/emblems/batman-petrolspor.png",
     titles: [],
   },
   {
@@ -2829,7 +2829,7 @@ window.CLUBS = [
     city: "マルディン", founded: 2015, nickname: null,
     stadium: "マルディン21カスム・スタジアム", capacity: 5700,
     colors: ["other"], shapes: ["other"], motif: null,
-    emblem: null,
+    emblem: "images/emblems/mardin-1969.png",
     titles: [],
   },
   {
@@ -2837,7 +2837,7 @@ window.CLUBS = [
     city: "ムーラ", founded: 1967, nickname: null,
     stadium: "ムーラ・アタテュルク・スタジアム", capacity: 7755,
     colors: ["other"], shapes: ["other"], motif: null,
-    emblem: null,
+    emblem: "images/emblems/muglaspor.png",
     titles: [],
   },
   {
@@ -3017,7 +3017,7 @@ window.CLUBS = [
     city: "カプフェンベルク", founded: 1919, nickname: "ファルケン（鷹）",
     stadium: "フランツ・フェケテ・スタディオン", capacity: 9640,
     colors: ["red", "white", "other"], shapes: ["shield", "letter"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/5/58/Kapfenberger_SV.png",
+    emblem: "images/emblems/kapfenberger-sv.png",
     titles: [],
   },
   {
@@ -3025,7 +3025,7 @@ window.CLUBS = [
     city: "ヴァルス＝ジーツェンハイム", founded: 1947, nickname: null,
     stadium: "レッドブル・アレーナ", capacity: 30188,
     colors: ["white", "blue"], shapes: ["circle", "letter"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/a/a0/FC_Liefering_logo.png",
+    emblem: "images/emblems/liefering.png",
     titles: [],
   },
   {
@@ -3279,7 +3279,7 @@ window.CLUBS = [
     city: "フラデツ・クラーロヴェー", founded: 1905, nickname: "スラヴ人",
     stadium: "マルショヴィツカー・アレーナ", capacity: 9300,
     colors: ["black", "white", "other", "orange"], shapes: ["shield", "animal"], motif: null,
-    emblem: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Logo-FCHK.svg/500px-Logo-FCHK.svg.png",
+    emblem: "images/emblems/hradec-kralove.png",
     titles: [],
   },
   {
@@ -3383,7 +3383,7 @@ window.CLUBS = [
     city: "ズリーン", founded: 1919, nickname: "靴屋",
     stadium: "レトナー・スタディオン", capacity: 5898,
     colors: ["yellow", "blue"], shapes: ["shield", "letter"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/f/fc/FC_Zlin_logo.png",
+    emblem: "images/emblems/zlin.png",
     titles: [],
   },
 
@@ -3457,7 +3457,7 @@ window.CLUBS = [
     city: "オパヴァ", founded: 1907, nickname: "シレジア",
     stadium: "ミェストスキー・スタディオン・オパヴァ", capacity: 7758,
     colors: ["other"], shapes: ["other"], motif: null,
-    emblem: null,
+    emblem: "images/emblems/sfc-opava.png",
     titles: [],
   },
   {
@@ -3645,7 +3645,7 @@ window.CLUBS = [
     city: "エーゲルスン", founded: 1919, nickname: "ティグレネ（虎）",
     stadium: "イドレッツパルケン", capacity: null,
     colors: ["yellow", "black", "white"], shapes: ["tall", "letter"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/c/cd/Egersunds_IK_logo.png",
+    emblem: "images/emblems/egersunds-ik.png",
     titles: [],
   },
   {
@@ -3685,7 +3685,7 @@ window.CLUBS = [
     city: "モス", founded: 1906, nickname: "ケラネ（若者たち）",
     stadium: "メッレス・スタディオン", capacity: 3200,
     colors: ["black", "yellow"], shapes: ["shield", "letter"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/1/13/Moss_FK.png",
+    emblem: "images/emblems/moss.png",
     titles: [],
   },
   {
@@ -3693,7 +3693,7 @@ window.CLUBS = [
     city: "シーエン", founded: 1894, nickname: "オドラネ",
     stadium: "スカゲラク・アレナ", capacity: 12000,
     colors: ["black", "white", "other"], shapes: ["circle", "letter"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/f/f3/Odds_BK_logo.png",
+    emblem: "images/emblems/odds-bk.png",
     titles: [],
   },
   {
@@ -4067,7 +4067,7 @@ window.CLUBS = [
     city: "キフィシア", founded: 2012, nickname: "キアノレフキ（青と白）",
     stadium: "レオフォロス・アレクサンドラス・スタジアム", capacity: 16003,
     colors: ["blue", "white"], shapes: ["shield"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/d/d9/A.E._Kifisia_new_official_logo.webp",
+    emblem: "images/emblems/kifisia.png",
     titles: [],
   },
   {
@@ -4107,7 +4107,7 @@ window.CLUBS = [
     city: "カラマタ", founded: 1967, nickname: "マヴリ・シエラ（黒い嵐）",
     stadium: "カラマタ市営スタジアム", capacity: 4496,
     colors: ["black", "white", "other"], shapes: ["shield"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/7/74/Kalamata_FC_official_emblem.png",
+    emblem: "images/emblems/kalamata.png",
     titles: [],
   },
   {
@@ -4621,7 +4621,7 @@ window.CLUBS = [
     city: "ヴィズオウア", founded: 1925, nickname: "デ・ガムレ・ケンパー（老巨人）",
     stadium: "プロ・ヴェンティレーション・アレーナ", capacity: 12000,
     colors: ["red", "white", "black", "other"], shapes: ["shield", "letter"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/c/c2/Hvidovre_IF.png",
+    emblem: "images/emblems/hvidovre-if.png",
     titles: [],
   },
   {
@@ -4629,7 +4629,7 @@ window.CLUBS = [
     city: "ヴェイレ", founded: 1891, nickname: "デ・ローデ（赤）",
     stadium: "ヴェイレ・スタディオン", capacity: 11060,
     colors: ["red", "white", "black", "other"], shapes: ["shield", "letter"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/a/a3/Vejle_Boldklub.png",
+    emblem: "images/emblems/vejle-boldklub.png",
     titles: [],
   },
   {
@@ -4669,7 +4669,7 @@ window.CLUBS = [
     city: "ヒョリング", founded: 2013, nickname: null,
     stadium: "ヨーリング・スタディオン", capacity: 7500,
     colors: ["blue", "white"], shapes: ["circle"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/c/cf/Vendsyssel_FF_%282013%29.png",
+    emblem: "images/emblems/vendsyssel-ff.png",
     titles: [],
   },
   {
@@ -4693,7 +4693,7 @@ window.CLUBS = [
     city: "コリング", founded: 1895, nickname: "デ・ブロー＝ヴィデ（青と白）",
     stadium: "コリング・スタディオン", capacity: 10000,
     colors: ["white", "blue"], shapes: ["shield"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/8/86/KoldingIFBadge.png",
+    emblem: "images/emblems/kolding-if.png",
     titles: [],
   },
   {
@@ -4841,7 +4841,7 @@ window.CLUBS = [
     city: "ローザンヌ", founded: 1901, nickname: null,
     stadium: "スタッド・オランピック・ドゥ・ラ・ポンテーズ", capacity: 15700,
     colors: ["red"], shapes: ["animal"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/e/e5/FC_Stade_Lausanne_Ouchy-en.png",
+    emblem: "images/emblems/stade-lausanne-ouchy.png",
     titles: [],
   },
   {
@@ -4857,7 +4857,7 @@ window.CLUBS = [
     city: "ニヨン", founded: 1905, nickname: "ジョーヌ・エ・ノワール（黄と黒）",
     stadium: "スタッド・ドゥ・コロヴレ", capacity: 7200,
     colors: ["yellow", "black", "white"], shapes: ["shield", "letter"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/8/89/FC_Stade_Nyonnais_logo.png",
+    emblem: "images/emblems/stade-nyonnais.png",
     titles: [],
   },
   {
@@ -4915,7 +4915,7 @@ window.CLUBS = [
     city: "リエカ", founded: 1904, nickname: "リエカの白",
     stadium: "スタディオン・ルイェヴィツァ", capacity: 8191,
     colors: ["white", "other", "blue"], shapes: ["shield"], motif: null,
-    emblem: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/HNK_Rijeka.svg/500px-HNK_Rijeka.svg.png",
+    emblem: "images/emblems/hnk-rijeka.png",
     titles: [],
   },
   {
@@ -4923,7 +4923,7 @@ window.CLUBS = [
     city: "ヴェリカ・ゴリツァ", founded: 2009, nickname: "ゴリチャニ",
     stadium: "スタディオン・ラドニク", capacity: 8000,
     colors: ["orange", "black", "red", "other"], shapes: ["shield"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/e/ea/HNK_Gorica.png",
+    emblem: "images/emblems/hnk-gorica.png",
     titles: [],
   },
   {
@@ -4963,7 +4963,7 @@ window.CLUBS = [
     city: "コプリヴニツァ", founded: 1907, nickname: "薬剤師",
     stadium: "グラドスキ・スタディオン", capacity: 3134,
     colors: ["white", "blue", "red", "yellow"], shapes: ["shield"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/f/f5/Slaven_Belupo_2022_logo.png",
+    emblem: "images/emblems/nk-slaven-belupo.png",
     titles: [],
   },
   {
@@ -5379,7 +5379,7 @@ window.CLUBS = [
     city: "コマールノ", founded: 1900, nickname: "リラーク",
     stadium: "ヴィオン・アレーナ", capacity: 4408,
     colors: ["white", "purple"], shapes: ["circle"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/6/6e/KFC_Kom%C3%A1rom_logo.png",
+    emblem: "images/emblems/kfc-komarno.png",
     titles: [],
   },
   {
@@ -5387,7 +5387,7 @@ window.CLUBS = [
     city: "コシツェ", founded: 2018, nickname: "ジュルトモドリー（黄と青）",
     stadium: "コシツカー・フトバロヴァー・アレーナ", capacity: 12555,
     colors: ["blue", "yellow"], shapes: ["shield"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/c/cc/FC_Kosice_logo.png",
+    emblem: "images/emblems/kosice.png",
     titles: [],
   },
   {
@@ -5395,7 +5395,7 @@ window.CLUBS = [
     city: "ポドブレゾヴァー", founded: 1920, nickname: "ジェレジアリ（製鉄工）",
     stadium: "ZELPOアレーナ", capacity: 4061,
     colors: ["black", "white", "red", "other"], shapes: ["circle"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/8/8f/FK_%C5%BDeleziarne_Podbrezov%C3%A1_logo.png",
+    emblem: "images/emblems/zeleziarne-podbrezova.png",
     titles: [],
   },
   {
@@ -5443,7 +5443,7 @@ window.CLUBS = [
     city: "ミハロフツェ", founded: 1912, nickname: "ゼムプリンチャニア",
     stadium: "メスツキー・フトバロヴィー・シュタディオーン", capacity: 4440,
     colors: ["blue", "white", "yellow"], shapes: ["circle"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/9/9b/MFK_Zempl%C3%ADn_Michalovce_new_logo.png",
+    emblem: "images/emblems/mfk-zemplin-michalovce.png",
     titles: [],
   },
   {
@@ -5493,7 +5493,7 @@ window.CLUBS = [
     city: "ビトチャ", founded: 1912, nickname: null,
     stadium: "MFKビトチャ・スタジアム", capacity: 2000,
     colors: ["other"], shapes: ["other"], motif: null,
-    emblem: null,
+    emblem: "images/emblems/mfk-bytca.png",
     titles: [],
   },
   {
@@ -5599,7 +5599,7 @@ window.CLUBS = [
     city: "ノヴィ・ベオグラード", founded: 1953, nickname: "トラクトリスティ（トラクター乗り）",
     stadium: "ラガトル・スタジアム", capacity: 8030,
     colors: ["white", "black", "other"], shapes: ["circle", "letter"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/2/2f/FK_IMT_crest.png",
+    emblem: "images/emblems/imt-novi-beograd.png",
     titles: [],
   },
   {
@@ -5631,7 +5631,7 @@ window.CLUBS = [
     city: "ベオグラード", founded: 1911, nickname: "ロマンティチャリ（ロマンチスト）",
     stadium: "オムラディンスキ・スタジアム", capacity: 10600,
     colors: ["blue", "white"], shapes: ["shield"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/3/32/OFK_Beograd.png",
+    emblem: "images/emblems/ofk-beograd.png",
     titles: [],
   },
   {
@@ -5679,7 +5679,7 @@ window.CLUBS = [
     city: "パンチェヴォ", founded: 1947, nickname: "ディゼルカ（ディーゼル機関車）",
     stadium: "SCモトル・スタジアム", capacity: 2967,
     colors: ["white", "blue", "black", "yellow"], shapes: ["shield"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/2/21/FK_%C5%BDelezni%C4%8Dar_Pan%C4%8Devo_logo.png",
+    emblem: "images/emblems/zeleznicar-pancevo.png",
     titles: [],
   },
 
@@ -6137,7 +6137,7 @@ window.CLUBS = [
     city: "パザルジク", founded: 1918, nickname: "グロバリテ（墓掘り人）",
     stadium: "スタディオン・ゲオルギ・ベンコフスキ", capacity: 13000,
     colors: ["other"], shapes: ["other"], motif: null,
-    emblem: null,
+    emblem: "images/emblems/hebar-pazardzhik.png",
     titles: [],
   },
   {
@@ -6397,7 +6397,7 @@ window.CLUBS = [
     city: "ポレミディア", founded: null, nickname: null,
     stadium: null, capacity: null,
     colors: ["other"], shapes: ["other"], motif: null,
-    emblem: null,
+    emblem: "images/emblems/polemidion.png",
     titles: [],
   },
   {
@@ -7257,7 +7257,7 @@ window.CLUBS = [
     city: "彦根市", founded: 2005, nickname: "レイラック",
     stadium: "平和堂HATOスタジアム", capacity: 9000,
     colors: ["other"], shapes: ["other"], motif: null,
-    emblem: null,
+    emblem: "images/emblems/reilac-shiga.png",
     titles: [],
   },
   {
@@ -7281,7 +7281,7 @@ window.CLUBS = [
     city: "沖縄市", founded: 2003, nickname: "ベンガラ",
     stadium: "タピック県総ひやごんスタジアム", capacity: 10189,
     colors: ["other"], shapes: ["other"], motif: null,
-    emblem: null,
+    emblem: "images/emblems/ryukyu.png",
     titles: [],
   },
   {
@@ -8173,7 +8173,7 @@ window.CLUBS = [
     city: "ハルマ", founded: 1954, nickname: "アル・アンナビ（えんじ色）",
     stadium: "アル・マジュマア・スポーツシティ", capacity: 6266,
     colors: ["red", "white"], shapes: ["circle"], motif: null,
-    emblem: "https://upload.wikimedia.org/wikipedia/en/c/c9/Al-Faisaly_FC_New_Logo.png",
+    emblem: "images/emblems/al-faisaly.png",
     titles: [],
   },
   {
