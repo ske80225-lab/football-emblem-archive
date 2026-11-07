@@ -23,6 +23,7 @@
   --div1: #1f4e9c;
   --div2: #8a8a86;
   --div3: #b5b5b0;
+  --div4: #cfcfca;
   --radius: 10px;
 }
 
@@ -381,7 +382,7 @@ img { display: block; max-width: 100%; }
   color: var(--panel-bg);
 }
 
-/* League：ALL / Div. 1 / Div. 2 / Div. 3 */
+/* League：ALL / Div. 1〜4 */
 .segmented {
   display: inline-flex;
   gap: 0;
@@ -510,6 +511,7 @@ img { display: block; max-width: 100%; }
 }
 .division--2 { background: var(--div2); }
 .division--3 { background: var(--div3); }
+.division--4 { background: var(--div4); color: var(--text); }
 
 
 /* ---------- 詳細モーダル ---------- */
